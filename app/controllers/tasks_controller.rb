@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
     
     def index
+        @tasks = Task.all
     end
 
     def new
@@ -9,7 +10,7 @@ class TasksController < ApplicationController
     def create
     end
     
-    def delete
+    def destroy
     end
 
 end
