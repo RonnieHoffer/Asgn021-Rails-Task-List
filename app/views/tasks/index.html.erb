@@ -7,7 +7,7 @@
 <ul>
     <% @tasks.each do |task| %>
         <li>
-            <%= link_to "Delete", method: :delete %>    
+            <%= link_to "Delete", task_path(task), method: :delete %>    
             <%= task.name %>
         </li>
     <%end%>
