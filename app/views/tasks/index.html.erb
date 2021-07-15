@@ -1,8 +1,13 @@
 <h1>Task List</h1>
 
+<%= link_to "Add a Task", new_task_path %>
+
+<%= render partial: "form" %>
+
 <ul>
     <% @tasks.each do |task| %>
         <li>
+            <%= link_to "Delete", method: :delete %>    
             <%= task.name %>
         </li>
     <%end%>
